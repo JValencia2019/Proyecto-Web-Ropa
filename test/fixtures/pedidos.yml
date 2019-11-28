@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario: MyString
+  producto: MyString
+  cantidad: 1
+  precio: 9.99
+  DNI: MyString
+  nombres: MyString
+  direccion: MyString
+  estado: MyString
+  costoenvio: 9.99
+
+two:
+  usuario: MyString
+  producto: MyString
+  cantidad: 1
+  precio: 9.99
+  DNI: MyString
+  nombres: MyString
+  direccion: MyString
+  estado: MyString
+  costoenvio: 9.99

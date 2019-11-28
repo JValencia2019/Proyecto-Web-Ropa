@@ -1,0 +1,77 @@
+<%= form_with(model: rail, local: true) do |form| %>
+  <% if rail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rail.errors.count, "error") %> prohibited this rail from being saved:</h2>
+
+      <ul>
+        <% rail.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :g %>
+    <%= form.text_field :g %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scaffold %>
+    <%= form.text_field :scaffold %>
+  </div>
+
+  <div class="field">
+    <%= form.label :OrdendeCompra %>
+    <%= form.text_field :OrdendeCompra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :producto %>
+    <%= form.text_field :producto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantidad %>
+    <%= form.number_field :cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.text_field :precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :boleta %>
+    <%= form.text_field :boleta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DNI %>
+    <%= form.text_field :DNI %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_pago %>
+    <%= form.text_field :tipo_pago %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.text_field :total %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

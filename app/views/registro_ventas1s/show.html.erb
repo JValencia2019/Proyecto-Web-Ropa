@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @registro_ventas1.codigo %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @registro_ventas1.cantidad %>
+</p>
+
+<p>
+  <strong>Valor Unitario:</strong>
+  <%= @registro_ventas1.valorUnitario %>
+</p>
+
+<p>
+  <strong>Numero Boleta:</strong>
+  <%= @registro_ventas1.numeroBoleta %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @registro_ventas1.nombre %>
+</p>
+
+<%= link_to 'Editar', edit_registro_ventas1_path(@registro_ventas1) %> |
+<%= link_to 'Retroceder', registro_ventas1s_path %>

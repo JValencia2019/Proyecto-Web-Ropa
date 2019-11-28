@@ -1,0 +1,24 @@
+<div class="col-md-4">
+	  	
+		  	<div class="box relative article-height">
+		  		
+		  		<div class="absolute article-height background-cover" style="background:url(<%=
+		  		article.cover.url(:thumb) %>);top:0px;left:0px;width:100%;">
+		  		</div>
+
+		  		<div class="absolute article-height background-cover" style="background:rgba(0,0,0,0.3);
+		  		top:0px;left:0px;width:100%;">
+		  		</div>
+
+			</div>
+
+				<p>
+				<div class="relative text-center">
+		  		<h2><%= link_to article.title, article %></h2>
+				</div>
+				<div class="relative text-center">
+		  		<h2>S/ <%= article.precio %></h2>
+				<%=truncate(article.body,length:80) %>
+				</p>
+				</div>
+</div>

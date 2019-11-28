@@ -1,0 +1,2 @@
+module RegistroVentas1sHelper
+end

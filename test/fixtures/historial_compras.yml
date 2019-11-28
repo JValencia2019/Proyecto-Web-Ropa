@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: MyString
+  producto: MyString
+  cantidad: 1
+  precio: 
+  boleta: MyString
+  dni: MyString
+  nombres: MyString
+  tipo_pago: MyString
+  total: 
+
+two:
+  fecha: MyString
+  producto: MyString
+  cantidad: 1
+  precio: 
+  boleta: MyString
+  dni: MyString
+  nombres: MyString
+  tipo_pago: MyString
+  total: 

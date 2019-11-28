@@ -1,0 +1,51 @@
+<div style="width: 80%;margin: 0 auto;">
+
+<% name ||= "Crear" %>
+<h1><%= name%> Articulo</h1>
+
+<%= form_for(@article) do |f| %>
+	
+	<% @article.errors.full_messages.each do |message| %>
+	<div class="be-red white top-space">
+	* <%= message %>
+	</div>
+	<%end%>
+
+	<div class="field">
+		<%= f.text_field :title, placeholder: "Titulo del articulo", class:"form-control" %>
+	</div>
+	
+	<div class="field">
+		Portada: <%= f.file_field :cover %>
+	</div>
+	
+	<div class="field">	
+		Descripcion: <%= f.text_area :body, placeholder: "Escribe aqui la descripcion del articulo", style:"height:100px;", class:"form-control"%>
+	</div>
+
+	<div class="field">	
+		Precio: <%= f.text_field :precio, placeholder: "Valor", style:"height:25px;", class:"form-control-number"%>
+	</div>
+
+	<div class="field">	
+		Stock Disponible: <%= f.text_field :stock, placeholder: "Stock Disponible", style:"height:25px;", class:"form-control-number"%>
+	</div>
+
+	<div class="field" >
+		<label>Categorias</label>
+		<% @categories.each do |category| %>
+	<div class="field" >
+	<%=	check_box_tag "categories[]", category.id %> <%= category.name %>
+	</div>
+		<%end%>
+	</div>
+
+	
+	<div class="field" >
+		<%= f.submit "Guardar", class:"btn be-red white" %>
+	</div>
+
+<%end%>
+
+</div>
+
